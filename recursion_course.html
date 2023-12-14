@@ -1,0 +1,2094 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Recursion</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/c_programming_css.css" rel="stylesheet">
+
+    </head>
+    
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/savvy-high-resolution-logo-black-transparent (1).png" width="177" height="57" alt=""/>
+                        <span>&nbsp;</span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-4">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_1">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_2">Browse Topics</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_3">How it work&nbsp; &nbsp;</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/">Practice</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_4">About US</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="topics-listing.html">Quizzes</a></li>
+
+                                    <li><a class="dropdown-item" href="contact.html">Developer Contact</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                        </div>
+                  </div>
+                </div>
+            </nav>
+            
+
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-lg-5 col-12 mb-5">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">Recursion</li>
+                                </ol>
+                            </nav>
+
+                            <h2 class="text-white">Recursion</h2>
+                            <p>&nbsp;</p>
+<div class="d-flex align-items-center mt-5">
+            <a href="#topics-detail" class="btn custom-btn custom-border-btn smoothscroll me-4">Read More</a>
+
+              <a href="#top" class="custom-icon bi-bookmark smoothscroll"></a>
+            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-12">
+                            <div class="topics-detail-block bg-white shadow-lg">
+                                <img src="images/recursion.png" class="topics-detail-block-image img-fluid">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="topics-detail-section section-padding" id="topics-detail">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 m-auto">
+                            <h4 class="mb-4">Getting Started</h4>
+
+                            <p>The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called a recursive function. Using a recursive algorithm, certain problems can be solved quite easily. Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc.</p>
+
+                          <h4 class="mb-4"><br>
+                          Why Recursion?</h4>
+
+                            <p>Recursion is an amazing technique with the help of which we can reduce the length of our code and make it easier to read and write. It has certain advantages over the iteration technique which will be discussed later. A task that can be defined with its similar subtask, recursion is one of the best solutions for it. For example; The Factorial of a number.<br>
+							</p>
+							<h4>Algorithm: Steps</h4>
+<pre>The algorithmic steps for implementing recursion in a function are as follows:
+
+Step1 - Define a base case: Identify the simplest case for which the solution is known or trivial. This is the stopping condition for the recursion, as it prevents the function from infinitely calling itself.
+
+Step2 - Define a recursive case: Define the problem in terms of smaller subproblems. Break the problem down into smaller versions of itself, and call the function recursively to solve each subproblem.
+
+Step3 - Ensure the recursion terminates: Make sure that the recursive function eventually reaches the base case, and does not enter an infinite loop.
+
+step4 - Combine the solutions: Combine the solutions of the subproblems to solve the original problem.</pre>
+<p><strong>A Mathematical Interpretation</strong></p>
+<p>Let us consider a problem that a programmer has to determine the sum of first n natural numbers, there are several ways of doing that but the simplest approach is simply to add the numbers starting from 1 to n. So the function simply looks like this,</p>
+<blockquote>
+<p><strong>approach(1) &#8211; Simply adding one by one</strong></p><div id="GFG_AD_Desktop_InContent_ATF_336x280" style="text-align:center;max-height: 280px;"></div>
+<p><strong>f(n) = 1 + 2 + 3 +&#8230;…..+ n</strong></p>
+</blockquote>
+<p>but there is another mathematical approach of representing this,</p>
+<blockquote>
+<p><strong>approach(2) &#8211; Recursive adding&nbsp;</strong></p>
+<p><strong>f(n) = 1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;n=1</strong></p>
+<p><strong>f(n) = n + f(n-1) &nbsp; &nbsp;n&gt;1</strong></p>
+</blockquote>
+<p>There is a simple difference between the approach (1) and approach(2) and that is in <strong>approach(2)</strong> the function &#8220;<strong> f( ) </strong>&#8221; itself is being called inside the function, so this phenomenon is named recursion, and the function containing recursion is called recursive function, at the end, this is a great tool in the hand of the programmers to code some problems in a lot easier and efficient way.</p><div style="text-align:center;margin:20px 0;max-height: 280px;" id="GFG_AD_gfg_outstream_incontent"></div>
+<p><strong>How are recursive functions stored in memory?</strong></p>
+<p>Recursion uses more memory, because the recursive function adds to the stack with each recursive call, and keeps the values there until the call is finished. The recursive function uses LIFO (LAST IN FIRST OUT) Structure just like the stack data structure. <a href="https://www.geeksforgeeks.org/stack-data-structure/">https://www.geeksforgeeks.org/stack-data-structure/</a><br />&nbsp;</p>
+<p><strong>What is the base condition in recursion?</strong>&nbsp;<br />In the recursive program, the solution to the base case is provided and the solution to the bigger problem is expressed in terms of smaller problems.&nbsp;<br />&nbsp;</p>
+<pre>int fact(int n)
+{
+    if (n &lt; = 1) // base case
+        return 1;
+    else    
+        return n*fact(n-1);    
+}</pre>
+<p>In the above example, the base case for n &lt; = 1 is defined and the larger value of a number can be solved by converting to a smaller one till the base case is reached.</p>
+<p><strong>How a particular problem is solved using recursion?</strong>&nbsp;<br />The idea is to represent a problem in terms of one or more smaller problems, and add one or more base conditions that stop the recursion. For example, we compute factorial n if we know the factorial of (n-1). The base case for factorial would be n = 0. We return 1 when n = 0.&nbsp;</p>
+<p><strong>Why Stack Overflow error occurs in recursion?</strong>&nbsp;<br />If the base case is not reached or not defined, then the stack overflow problem may arise. Let us take an example to understand this.</p>
+<pre>int fact(int n)
+{
+    // wrong base case (it may cause
+    // stack overflow).
+    if (n == 100) 
+        return 1;
+
+    else
+        return n*fact(n-1);
+}</pre>
+<p>If fact(10) is called, it will call fact(9), fact(8), fact(7), and so on but the number will never reach 100. So, the base case is not reached. If the memory is exhausted by these functions on the stack, it will cause a stack overflow error.&nbsp;</p>
+<p><strong>What is the difference between direct and indirect recursion?</strong>&nbsp;<br />A function fun is called direct recursive if it calls the same function fun. A function fun is called indirect recursive if it calls another function say fun_new and fun_new calls fun directly or indirectly. The difference between direct and indirect recursion has been illustrated in Table 1.&nbsp;</p>
+<pre><strong>// An example of direct recursion</strong>
+void directRecFun()
+{
+    // Some code....
+
+    directRecFun();
+
+    // Some code...
+}
+
+<strong>// An example of indirect recursion</strong>
+void indirectRecFun1()
+{
+    // Some code...
+
+    indirectRecFun2();
+
+    // Some code...
+}
+void indirectRecFun2()
+{
+    // Some code...
+
+    indirectRecFun1();
+
+    // Some code...
+}</pre>
+<p><strong>What is the difference between tailed and non-tailed recursion?</strong>&nbsp;<br />A recursive function is tail recursive when a recursive call is the last thing executed by the function. Please refer <a href="https://www.geeksforgeeks.org/tail-recursion/">tail recursion article</a> for details.&nbsp;</p>
+<p><strong>How memory is allocated to different function calls in recursion?</strong>&nbsp;<br />When any function is called from main(), the memory is allocated to it on the stack. A recursive function calls itself, the memory for a called function is allocated on top of memory allocated to the calling function and a different copy of local variables is created for each function call. When the base case is reached, the function returns its value to the function by whom it is called and memory is de-allocated and the process continues.<br />Let us take the example of how recursion works by taking a simple function.&nbsp;</p><div style="text-align:center;margin:20px 0;max-height: 280px;" id="GFG_AD_gfg_outstream_incontent"></div>
+<div class="responsive-tabs">
+<h4 class="tabtitle">CPP</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="cpp"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i>
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="cpp" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="cpp"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i>
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i>
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="cpp" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_506259" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="comments">// A C++ program to demonstrate working of</code></div>
+<div class="line number2 index1 alt1"><code class="comments">// recursion</code></div>
+<div class="line number3 index2 alt2"><code class="preprocessor">#include &lt;bits/stdc++.h></code></div>
+<div class="line number4 index3 alt1"><code class="keyword bold">using</code> <code class="keyword bold">namespace</code> <code class="plain">std;</code></div>
+<div class="line number5 index4 alt2">&nbsp;</div>
+<div class="line number6 index5 alt1"><code class="keyword bold">void</code> <code class="plain">printFun(</code><code class="color1 bold">int</code> <code class="plain">test)</code></div>
+<div class="line number7 index6 alt2"><code class="plain">{</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code> <code class="plain">(test &lt; 1)</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code><code class="plain">;</code></div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">else</code> <code class="plain">{</code></div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">cout &lt;&lt; test &lt;&lt; </code><code class="string">" "</code><code class="plain">;</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">printFun(test - 1); </code><code class="comments">// statement 2</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">cout &lt;&lt; test &lt;&lt; </code><code class="string">" "</code><code class="plain">;</code></div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code><code class="plain">;</code></div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number16 index15 alt1"><code class="plain">}</code></div>
+<div class="line number17 index16 alt2">&nbsp;</div>
+<div class="line number18 index17 alt1"><code class="comments">// Driver Code</code></div>
+<div class="line number19 index18 alt2"><code class="color1 bold">int</code> <code class="plain">main()</code></div>
+<div class="line number20 index19 alt1"><code class="plain">{</code></div>
+<div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">test = 3;</code></div>
+<div class="line number22 index21 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">printFun(test);</code></div>
+<div class="line number23 index22 alt2"><code class="plain">}</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">Java</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="java"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i>
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="java" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="java"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i>
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="java" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_25533" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="comments">// A Java program to demonstrate working of</code></div>
+<div class="line number2 index1 alt1"><code class="comments">// recursion</code></div>
+<div class="line number3 index2 alt2"><code class="keyword">class</code> <code class="plain">GFG {</code></div>
+<div class="line number4 index3 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">static</code> <code class="keyword">void</code> <code class="plain">printFun(</code><code class="keyword">int</code> <code class="plain">test)</code></div>
+<div class="line number5 index4 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(test &lt; </code><code class="value">1</code><code class="plain">)</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code><code class="plain">;</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code> <code class="plain">{</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">System.out.printf(</code><code class="string">"%d "</code><code class="plain">, test);</code></div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">printFun(test - </code><code class="value">1</code><code class="plain">); </code><code class="comments">// statement 2</code></div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">System.out.printf(</code><code class="string">"%d "</code><code class="plain">, test);</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code><code class="plain">;</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number15 index14 alt2">&nbsp;</div>
+<div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Driver Code</code></div>
+<div class="line number17 index16 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">public</code> <code class="keyword">static</code> <code class="keyword">void</code> <code class="plain">main(String[] args)</code></div>
+<div class="line number18 index17 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">int</code> <code class="plain">test = </code><code class="value">3</code><code class="plain">;</code></div>
+<div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">printFun(test);</code></div>
+<div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number22 index21 alt1"><code class="plain">}</code></div>
+<div class="line number23 index22 alt2">&nbsp;</div>
+<div class="line number24 index23 alt1"><code class="comments">// This code is contributed by</code></div>
+<div class="line number25 index24 alt2"><code class="comments">// Smitha Dinesh Semwal</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">Python3</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="python3"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="python3" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="python3"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i>
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i>
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="python3" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_152827" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="comments"># A Python 3 program to</code></div>
+<div class="line number2 index1 alt1"><code class="comments"># demonstrate working of</code></div>
+<div class="line number3 index2 alt2"><code class="comments"># recursion</code></div>
+<div class="line number4 index3 alt1">&nbsp;</div>
+<div class="line number5 index4 alt2">&nbsp;</div>
+<div class="line number6 index5 alt1"><code class="keyword">def</code> <code class="plain">printFun(test):</code></div>
+<div class="line number7 index6 alt2">&nbsp;</div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(test &lt; </code><code class="value">1</code><code class="plain">):</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code></div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code><code class="plain">:</code></div>
+<div class="line number11 index10 alt2">&nbsp;</div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">print</code><code class="plain">(test, end</code><code class="keyword">=</code><code class="string">" "</code><code class="plain">)</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">printFun(test</code><code class="keyword">-</code><code class="value">1</code><code class="plain">)&nbsp; </code><code class="comments"># statement 2</code></div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">print</code><code class="plain">(test, end</code><code class="keyword">=</code><code class="string">" "</code><code class="plain">)</code></div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code></div>
+<div class="line number16 index15 alt1">&nbsp;</div>
+<div class="line number17 index16 alt2"><code class="comments"># Driver Code</code></div>
+<div class="line number18 index17 alt1"><code class="plain">test </code><code class="keyword">=</code> <code class="value">3</code></div>
+<div class="line number19 index18 alt2"><code class="plain">printFun(test)</code></div>
+<div class="line number20 index19 alt1">&nbsp;</div>
+<div class="line number21 index20 alt2"><code class="comments"># This code is contributed by</code></div>
+<div class="line number22 index21 alt1"><code class="comments"># Smitha Dinesh Semwal</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">C#</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="csharp"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i>
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="csharp" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="csharp"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="csharp" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_708340" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="comments">// A C# program to demonstrate</code></div>
+<div class="line number2 index1 alt1"><code class="comments">// working of recursion</code></div>
+<div class="line number3 index2 alt2"><code class="keyword">using</code> <code class="plain">System;</code></div>
+<div class="line number4 index3 alt1">&nbsp;</div>
+<div class="line number5 index4 alt2"><code class="keyword">class</code> <code class="plain">GFG {</code></div>
+<div class="line number6 index5 alt1">&nbsp;</div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// function to demonstrate</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// working of recursion</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">static</code> <code class="keyword">void</code> <code class="plain">printFun(</code><code class="keyword">int</code> <code class="plain">test)</code></div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(test &lt; 1)</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code><code class="plain">;</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code> <code class="plain">{</code></div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Console.Write(test + </code><code class="string">" "</code><code class="plain">);</code></div>
+<div class="line number15 index14 alt2">&nbsp;</div>
+<div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// statement 2</code></div>
+<div class="line number17 index16 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">printFun(test - 1);</code></div>
+<div class="line number18 index17 alt1">&nbsp;</div>
+<div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Console.Write(test + </code><code class="string">" "</code><code class="plain">);</code></div>
+<div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code><code class="plain">;</code></div>
+<div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number22 index21 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number23 index22 alt2">&nbsp;</div>
+<div class="line number24 index23 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Driver Code</code></div>
+<div class="line number25 index24 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">public</code> <code class="keyword">static</code> <code class="keyword">void</code> <code class="plain">Main(String[] args)</code></div>
+<div class="line number26 index25 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number27 index26 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">int</code> <code class="plain">test = 3;</code></div>
+<div class="line number28 index27 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">printFun(test);</code></div>
+<div class="line number29 index28 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number30 index29 alt1"><code class="plain">}</code></div>
+<div class="line number31 index30 alt2">&nbsp;</div>
+<div class="line number32 index31 alt1"><code class="comments">// This code is contributed by Anshul Aggarwal.</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">PHP</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="php"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i>
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="php" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="php"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="php" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_787282" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="plain">&lt;?php</code></div>
+<div class="line number2 index1 alt1"><code class="comments">// PHP program to demonstrate </code></div>
+<div class="line number3 index2 alt2"><code class="comments">// working of recursion</code></div>
+<div class="line number4 index3 alt1">&nbsp;</div>
+<div class="line number5 index4 alt2"><code class="comments">// function to demonstrate </code></div>
+<div class="line number6 index5 alt1"><code class="comments">// working of recursion</code></div>
+<div class="line number7 index6 alt2"><code class="keyword">function</code> <code class="plain">printFun(</code><code class="variable">$test</code><code class="plain">)</code></div>
+<div class="line number8 index7 alt1"><code class="plain">{</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(</code><code class="variable">$test</code> <code class="plain">&lt; 1)</code></div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code><code class="plain">;</code></div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions">echo</code><code class="plain">(</code><code class="string">"$test "</code><code class="plain">);</code></div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// statement 2</code></div>
+<div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">printFun(</code><code class="variable">$test</code><code class="plain">-1); </code></div>
+<div class="line number17 index16 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div>
+<div class="line number18 index17 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions">echo</code><code class="plain">(</code><code class="string">"$test "</code><code class="plain">);</code></div>
+<div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code><code class="plain">;</code></div>
+<div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number21 index20 alt2"><code class="plain">}</code></div>
+<div class="line number22 index21 alt1">&nbsp;</div>
+<div class="line number23 index22 alt2"><code class="comments">// Driver Code</code></div>
+<div class="line number24 index23 alt1"><code class="variable">$test</code> <code class="plain">= 3;</code></div>
+<div class="line number25 index24 alt2"><code class="plain">printFun(</code><code class="variable">$test</code><code class="plain">);</code></div>
+<div class="line number26 index25 alt1">&nbsp;</div>
+<div class="line number27 index26 alt2"><code class="comments">// This code is contributed by</code></div>
+<div class="line number28 index27 alt1"><code class="comments">// Smitha Dinesh Semwal.</code></div>
+<div class="line number29 index28 alt2"><code class="plain">?></code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">Javascript</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="jscript"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="jscript" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="jscript"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i>
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i>
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="jscript" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_629729" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="plain">&lt;script></code></div>
+<div class="line number2 index1 alt1">&nbsp;</div>
+<div class="line number3 index2 alt2"><code class="comments">// JavaScript program to demonstrate working of</code></div>
+<div class="line number4 index3 alt1"><code class="comments">// recursion</code></div>
+<div class="line number5 index4 alt2">&nbsp;</div>
+<div class="line number6 index5 alt1"><code class="keyword">function</code> <code class="plain">printFun(test)</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(test &lt; 1)</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code><code class="plain">;</code></div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code> <code class="plain">{</code></div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">document.write(test + </code><code class="string">" "</code><code class="plain">);</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">printFun(test - 1); </code><code class="comments">// statement 2</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">document.write(test + </code><code class="string">" "</code><code class="plain">);</code></div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code><code class="plain">;</code></div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number17 index16 alt2">&nbsp;</div>
+<div class="line number18 index17 alt1"><code class="comments">// Driver code</code></div>
+<div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">let test = 3;</code></div>
+<div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">printFun(test);</code></div>
+<div class="line number21 index20 alt2">&nbsp;</div>
+<div class="line number22 index21 alt1"><code class="plain">&lt;/script></code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+</div></div>
+<div class="code-output"><strong>Output</strong></p>
+<pre>3 2 1 1 2 3 </pre>
+</div>
+<p><strong>Time Complexity: </strong>O(1)<br /><strong>Auxiliary Space:</strong> O(1)</p>
+<p>When <strong>printFun(3)</strong> is called from main(), memory is allocated to <strong>printFun(3)</strong> and a local variable test is initialized to 3 and statement 1 to 4 are pushed on the stack as shown in below diagram. It first prints ‘3’. In statement 2, <strong>printFun(2)</strong> is called and memory is allocated to <strong>printFun(2)</strong> and a local variable test is initialized to 2 and statement 1 to 4 are pushed into the stack. Similarly, <strong>printFun(2)</strong> calls <strong>printFun(1)</strong> and <strong>printFun(1)</strong> calls <strong>printFun(0)</strong>. <strong>printFun(0)</strong> goes to if statement and it return to <strong>printFun(1)</strong>. The remaining statements of <strong>printFun(1) </strong>are executed and it returns to <strong>printFun(2)</strong> and so on. In the output, values from 3 to 1 are printed and then 1 to 3 are printed. The memory stack has been shown in below diagram.</p>
+<p><img src="images/recursion.jpg" alt="recursion"></p>
+
+<p>Now, let&#8217;s discuss a few practical problems which can be solved by using recursion and understand its basic working. For basic understanding please read the following articles.&nbsp;<br /><a href="https://www.geeksforgeeks.org/recursion/">Basic understanding of Recursion.</a><br /><strong>Problem 1: </strong>Write a program and recurrence relation to find the Fibonacci series of n where n&gt;2 .&nbsp;<br /><i>Mathematical Equation:</i>&nbsp;&nbsp;</p>
+<pre>n if n == 0, n == 1;      
+fib(n) = fib(n-1) + fib(n-2) otherwise;</pre>
+<p><i>Recurrence Relation:</i>&nbsp;</p>
+<pre>T(n) = T(n-1) + T(n-2) + O(1)</pre>
+<p><strong>Recursive program:</strong>&nbsp;</p>
+<pre><strong>Input:</strong> n = 5 
+<strong>Output:</strong>
+Fibonacci series of 5 numbers is : 0 1 1 2 3</pre>
+<p><strong>Implementation:</strong>&nbsp;</p>
+<div class="responsive-tabs">
+<h4 class="tabtitle">C++</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="cpp"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i>
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="cpp" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="cpp"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i>
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="cpp" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_688078" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="comments">// C++ code to implement Fibonacci series</code></div>
+<div class="line number2 index1 alt1"><code class="preprocessor">#include &lt;bits/stdc++.h></code></div>
+<div class="line number3 index2 alt2"><code class="keyword bold">using</code> <code class="keyword bold">namespace</code> <code class="plain">std;</code></div>
+<div class="line number4 index3 alt1">&nbsp;</div>
+<div class="line number5 index4 alt2"><code class="comments">// Function for fibonacci</code></div>
+<div class="line number6 index5 alt1">&nbsp;</div>
+<div class="line number7 index6 alt2"><code class="color1 bold">int</code> <code class="plain">fib(</code><code class="color1 bold">int</code> <code class="plain">n)</code></div>
+<div class="line number8 index7 alt1"><code class="plain">{</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code> <code class="plain">(n == 0)</code></div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">0;</code></div>
+<div class="line number12 index11 alt1">&nbsp;</div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code> <code class="plain">(n == 1 || n == 2)</code></div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">1;</code></div>
+<div class="line number16 index15 alt1">&nbsp;</div>
+<div class="line number17 index16 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Recursion function</code></div>
+<div class="line number18 index17 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">else</code></div>
+<div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">(fib(n - 1) + fib(n - 2));</code></div>
+<div class="line number20 index19 alt1"><code class="plain">}</code></div>
+<div class="line number21 index20 alt2">&nbsp;</div>
+<div class="line number22 index21 alt1"><code class="comments">// Driver Code</code></div>
+<div class="line number23 index22 alt2"><code class="color1 bold">int</code> <code class="plain">main()</code></div>
+<div class="line number24 index23 alt1"><code class="plain">{</code></div>
+<div class="line number25 index24 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Initialize variable n.</code></div>
+<div class="line number26 index25 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">n = 5;</code></div>
+<div class="line number27 index26 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">cout&lt;&lt;</code><code class="string">"Fibonacci series of 5 numbers is: "</code><code class="plain">;</code></div>
+<div class="line number28 index27 alt1">&nbsp;</div>
+<div class="line number29 index28 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// for loop to print the fibonacci series.</code></div>
+<div class="line number30 index29 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">for</code> <code class="plain">(</code><code class="color1 bold">int</code> <code class="plain">i = 0; i &lt; n; i++) </code></div>
+<div class="line number31 index30 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number32 index31 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">cout&lt;&lt;fib(i)&lt;&lt;</code><code class="string">" "</code><code class="plain">;</code></div>
+<div class="line number33 index32 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number34 index33 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">0;</code></div>
+<div class="line number35 index34 alt2"><code class="plain">}</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">C</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="c"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="c" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="c"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="c" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_661003" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="comments">// C code to implement Fibonacci series</code></div>
+<div class="line number2 index1 alt1"><code class="preprocessor">#include &lt;stdio.h></code></div>
+<div class="line number3 index2 alt2">&nbsp;</div>
+<div class="line number4 index3 alt1"><code class="comments">// Function for fibonacci</code></div>
+<div class="line number5 index4 alt2"><code class="color1 bold">int</code> <code class="plain">fib(</code><code class="color1 bold">int</code> <code class="plain">n)</code></div>
+<div class="line number6 index5 alt1"><code class="plain">{</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code> <code class="plain">(n == 0)</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">0;</code></div>
+<div class="line number10 index9 alt1">&nbsp;</div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code> <code class="plain">(n == 1 || n == 2)</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">1;</code></div>
+<div class="line number14 index13 alt1">&nbsp;</div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Recursion function</code></div>
+<div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">else</code></div>
+<div class="line number17 index16 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">(fib(n - 1) + fib(n - 2));</code></div>
+<div class="line number18 index17 alt1"><code class="plain">}</code></div>
+<div class="line number19 index18 alt2">&nbsp;</div>
+<div class="line number20 index19 alt1"><code class="comments">// Driver Code</code></div>
+<div class="line number21 index20 alt2"><code class="color1 bold">int</code> <code class="plain">main()</code></div>
+<div class="line number22 index21 alt1"><code class="plain">{</code></div>
+<div class="line number23 index22 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Initialize variable n.</code></div>
+<div class="line number24 index23 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">n = 5;</code></div>
+<div class="line number25 index24 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions bold">printf</code><code class="plain">(</code><code class="string">"Fibonacci series "</code></div>
+<div class="line number26 index25 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"of %d numbers is: "</code><code class="plain">,</code></div>
+<div class="line number27 index26 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">n);</code></div>
+<div class="line number28 index27 alt1">&nbsp;</div>
+<div class="line number29 index28 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// for loop to print the fibonacci series.</code></div>
+<div class="line number30 index29 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">for</code> <code class="plain">(</code><code class="color1 bold">int</code> <code class="plain">i = 0; i &lt; n; i++) {</code></div>
+<div class="line number31 index30 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions bold">printf</code><code class="plain">(</code><code class="string">"%d "</code><code class="plain">, fib(i));</code></div>
+<div class="line number32 index31 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number33 index32 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">0;</code></div>
+<div class="line number34 index33 alt1"><code class="plain">}</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">Java</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="java"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="java" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="java"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="java" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_381184" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="comments">// Java code to implement Fibonacci series</code></div>
+<div class="line number2 index1 alt1"><code class="keyword">import</code> <code class="plain">java.util.*;</code></div>
+<div class="line number3 index2 alt2">&nbsp;</div>
+<div class="line number4 index3 alt1"><code class="keyword">class</code> <code class="plain">GFG</code></div>
+<div class="line number5 index4 alt2"><code class="plain">{</code></div>
+<div class="line number6 index5 alt1">&nbsp;</div>
+<div class="line number7 index6 alt2"><code class="comments">// Function for fibonacci</code></div>
+<div class="line number8 index7 alt1"><code class="keyword">static</code> <code class="keyword">int</code> <code class="plain">fib(</code><code class="keyword">int</code> <code class="plain">n)</code></div>
+<div class="line number9 index8 alt2"><code class="plain">{</code></div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(n == </code><code class="value">0</code><code class="plain">)</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="value">0</code><code class="plain">;</code></div>
+<div class="line number13 index12 alt2">&nbsp;</div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(n == </code><code class="value">1</code> <code class="plain">|| n == </code><code class="value">2</code><code class="plain">)</code></div>
+<div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="value">1</code><code class="plain">;</code></div>
+<div class="line number17 index16 alt2">&nbsp;</div>
+<div class="line number18 index17 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Recursion function</code></div>
+<div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code></div>
+<div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">(fib(n - </code><code class="value">1</code><code class="plain">) + fib(n - </code><code class="value">2</code><code class="plain">));</code></div>
+<div class="line number21 index20 alt2"><code class="plain">}</code></div>
+<div class="line number22 index21 alt1">&nbsp;</div>
+<div class="line number23 index22 alt2"><code class="comments">// Driver Code</code></div>
+<div class="line number24 index23 alt1"><code class="keyword">public</code> <code class="keyword">static</code> <code class="keyword">void</code> <code class="plain">main(String []args)</code></div>
+<div class="line number25 index24 alt2"><code class="plain">{</code></div>
+<div class="line number26 index25 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+<div class="line number27 index26 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Initialize variable n.</code></div>
+<div class="line number28 index27 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">int</code> <code class="plain">n = </code><code class="value">5</code><code class="plain">;</code></div>
+<div class="line number29 index28 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">System.out.print(</code><code class="string">"Fibonacci series of 5 numbers is: "</code><code class="plain">);</code></div>
+<div class="line number30 index29 alt1">&nbsp;</div>
+<div class="line number31 index30 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// for loop to print the fibonacci series.</code></div>
+<div class="line number32 index31 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">for</code> <code class="plain">(</code><code class="keyword">int</code> <code class="plain">i = </code><code class="value">0</code><code class="plain">; i &lt; n; i++) </code></div>
+<div class="line number33 index32 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number34 index33 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">System.out.print(fib(i)+</code><code class="string">" "</code><code class="plain">);</code></div>
+<div class="line number35 index34 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number36 index35 alt1"><code class="plain">}</code></div>
+<div class="line number37 index36 alt2"><code class="plain">}</code></div>
+<div class="line number38 index37 alt1">&nbsp;</div>
+<div class="line number39 index38 alt2"><code class="comments">// This code is contributed by rutvik_56.</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">Python3</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="python3"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="python3" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="python3"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="python3" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_843761" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="comments"># Python code to implement Fibonacci series</code></div>
+<div class="line number2 index1 alt1">&nbsp;</div>
+<div class="line number3 index2 alt2"><code class="comments"># Function for fibonacci</code></div>
+<div class="line number4 index3 alt1"><code class="keyword">def</code> <code class="plain">fib(n):</code></div>
+<div class="line number5 index4 alt2">&nbsp;</div>
+<div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments"># Stop condition</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(n </code><code class="keyword">=</code><code class="keyword">=</code> <code class="value">0</code><code class="plain">):</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="value">0</code></div>
+<div class="line number9 index8 alt2">&nbsp;</div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments"># Stop condition</code></div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(n </code><code class="keyword">=</code><code class="keyword">=</code> <code class="value">1</code> <code class="keyword">or</code> <code class="plain">n </code><code class="keyword">=</code><code class="keyword">=</code> <code class="value">2</code><code class="plain">):</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="value">1</code></div>
+<div class="line number13 index12 alt2">&nbsp;</div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments"># Recursion function</code></div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code><code class="plain">:</code></div>
+<div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">(fib(n </code><code class="keyword">-</code> <code class="value">1</code><code class="plain">) </code><code class="keyword">+</code> <code class="plain">fib(n </code><code class="keyword">-</code> <code class="value">2</code><code class="plain">))</code></div>
+<div class="line number17 index16 alt2">&nbsp;</div>
+<div class="line number18 index17 alt1">&nbsp;</div>
+<div class="line number19 index18 alt2"><code class="comments"># Driver Code</code></div>
+<div class="line number20 index19 alt1">&nbsp;</div>
+<div class="line number21 index20 alt2"><code class="comments"># Initialize variable n.</code></div>
+<div class="line number22 index21 alt1"><code class="plain">n </code><code class="keyword">=</code> <code class="value">5</code><code class="plain">;</code></div>
+<div class="line number23 index22 alt2"><code class="keyword">print</code><code class="plain">(</code><code class="string">"Fibonacci series of 5 numbers is :"</code><code class="plain">,end</code><code class="keyword">=</code><code class="string">" "</code><code class="plain">)</code></div>
+<div class="line number24 index23 alt1">&nbsp;</div>
+<div class="line number25 index24 alt2"><code class="comments"># for loop to print the fibonacci series.</code></div>
+<div class="line number26 index25 alt1"><code class="keyword">for</code> <code class="plain">i </code><code class="keyword">in</code> <code class="functions">range</code><code class="plain">(</code><code class="value">0</code><code class="plain">,n): </code></div>
+<div class="line number27 index26 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">print</code><code class="plain">(fib(i),end</code><code class="keyword">=</code><code class="string">" "</code><code class="plain">)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">C#</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="csharp"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="csharp" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="csharp"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="csharp" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_439676" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="keyword">using</code> <code class="plain">System;</code></div>
+<div class="line number2 index1 alt1">&nbsp;</div>
+<div class="line number3 index2 alt2"><code class="keyword">public</code> <code class="keyword">class</code> <code class="plain">GFG</code></div>
+<div class="line number4 index3 alt1"><code class="plain">{</code></div>
+<div class="line number5 index4 alt2">&nbsp;</div>
+<div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="comments">// Function for fibonacci</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="keyword">static</code> <code class="keyword">int</code> <code class="plain">fib(</code><code class="keyword">int</code> <code class="plain">n)</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number9 index8 alt2">&nbsp;</div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(n == 0)</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">0;</code></div>
+<div class="line number13 index12 alt2">&nbsp;</div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(n == 1 || n == 2)</code></div>
+<div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">1;</code></div>
+<div class="line number17 index16 alt2">&nbsp;</div>
+<div class="line number18 index17 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Recursion function</code></div>
+<div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code></div>
+<div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">(fib(n - 1) + fib(n - 2));</code></div>
+<div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number22 index21 alt1">&nbsp;</div>
+<div class="line number23 index22 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="comments">// Driver Code</code></div>
+<div class="line number24 index23 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="keyword">static</code> <code class="keyword">public</code> <code class="keyword">void</code> <code class="plain">Main ()</code></div>
+<div class="line number25 index24 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number26 index25 alt1">&nbsp;</div>
+<div class="line number27 index26 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Initialize variable n.</code></div>
+<div class="line number28 index27 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">int</code> <code class="plain">n = 5;</code></div>
+<div class="line number29 index28 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Console.Write(</code><code class="string">"Fibonacci series of 5 numbers is: "</code><code class="plain">);</code></div>
+<div class="line number30 index29 alt1">&nbsp;</div>
+<div class="line number31 index30 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// for loop to print the fibonacci series.</code></div>
+<div class="line number32 index31 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">for</code> <code class="plain">(</code><code class="keyword">int</code> <code class="plain">i = 0; i &lt; n; i++) </code></div>
+<div class="line number33 index32 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number34 index33 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Console.Write(fib(i) + </code><code class="string">" "</code><code class="plain">);</code></div>
+<div class="line number35 index34 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number36 index35 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number37 index36 alt2"><code class="plain">}</code></div>
+<div class="line number38 index37 alt1">&nbsp;</div>
+<div class="line number39 index38 alt2"><code class="comments">// This code is contributed by avanitrachhadiya2155</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">Javascript</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="jscript"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="jscript" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="jscript"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="jscript" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_437203" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="plain">&lt;script></code></div>
+<div class="line number2 index1 alt1"><code class="comments">// JavaScript code to implement Fibonacci series</code></div>
+<div class="line number3 index2 alt2">&nbsp;</div>
+<div class="line number4 index3 alt1"><code class="comments">// Function for fibonacci</code></div>
+<div class="line number5 index4 alt2"><code class="keyword">function</code> <code class="plain">fib(n)</code></div>
+<div class="line number6 index5 alt1"><code class="plain">{</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code><code class="plain">(n == 0)</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">0;</code></div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;</code>&nbsp;</div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code><code class="plain">(n == 1 || n == 2)</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">1;</code></div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;</code><code class="comments">// Recursion function</code></div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code></div>
+<div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">fib(n-1) + fib(n-2);</code></div>
+<div class="line number17 index16 alt2"><code class="plain">}</code></div>
+<div class="line number18 index17 alt1">&nbsp;</div>
+<div class="line number19 index18 alt2"><code class="comments">// Initialize variable n.</code></div>
+<div class="line number20 index19 alt1"><code class="plain">let n = 5;</code></div>
+<div class="line number21 index20 alt2">&nbsp;</div>
+<div class="line number22 index21 alt1"><code class="plain">document.write(</code><code class="string">"Fibonacci series of 5 numbers is: "</code><code class="plain">);</code></div>
+<div class="line number23 index22 alt2">&nbsp;</div>
+<div class="line number24 index23 alt1"><code class="comments">// for loop to print the fibonacci series.</code></div>
+<div class="line number25 index24 alt2"><code class="keyword">for</code><code class="plain">(let i = 0; i &lt; n; i++)</code></div>
+<div class="line number26 index25 alt1"><code class="plain">{</code></div>
+<div class="line number27 index26 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">document.write(fib(i) + </code><code class="string">" "</code><code class="plain">);</code></div>
+<div class="line number28 index27 alt1"><code class="plain">}</code></div>
+<div class="line number29 index28 alt2">&nbsp;</div>
+<div class="line number30 index29 alt1"><code class="plain">&lt;/script></code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+</div></div>
+<div class="code-output"><strong>Output</strong></p><div style="text-align:center;margin:20px 0;max-height: 280px;" id="GFG_AD_gfg_outstream_incontent"></div>
+<pre>Fibonacci series of 5 numbers is: 0 1 1 2 3 </pre>
+</div>
+<p><strong>Time Complexity: </strong>O(2<sup>n</sup>)<br /><strong>Auxiliary Space: </strong>O(n)</p>
+<p>Here is the recursive tree for input 5 which shows a clear picture of how a big problem can be solved into smaller ones.&nbsp;<br />fib(n) is a Fibonacci function. The time complexity of the given program can depend on the function call.&nbsp;</p>
+<blockquote>
+<p>fib(n) -&gt; level CBT (UB) -&gt; 2^n-1 nodes -&gt; 2^n function call -&gt; 2^n*O(1) -&gt; T(n) = O(2^n)&nbsp;&nbsp;</p>
+</blockquote>
+<p>For Best Case.&nbsp;</p>
+<pre>T(n) =   ?(2^n\2)</pre>
+<p><strong>Working:</strong>&nbsp;</p>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20191107235734/fib1.jpg" alt=""></p>
+<p><strong>Problem 2:</strong> Write a program and recurrence relation to find the Factorial of n where n&gt;2 .&nbsp;<br /><strong>Mathematical Equation:</strong>&nbsp;</p>
+<pre>1 if n == 0 or n == 1;      
+f(n) = n*f(n-1) if n&gt; 1;</pre>
+<p><strong>Recurrence Relation:</strong>&nbsp;</p>
+<pre>T(n) = 1 for n = 0
+T(n) = 1 + T(n-1) for n &gt; 0</pre>
+<p><strong>Recursive Program:</strong>&nbsp;<br /><strong>Input:</strong> n = 5&nbsp;<br /><strong>Output:</strong>&nbsp;<br />factorial of 5 is: 120<br /><strong>Implementation:</strong>&nbsp;</p>
+<div class="responsive-tabs">
+<h4 class="tabtitle">C++</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="cpp"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="cpp" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="cpp"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="cpp" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_107959" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="comments">// C++ code to implement factorial</code></div>
+<div class="line number2 index1 alt1"><code class="preprocessor">#include &lt;bits/stdc++.h></code></div>
+<div class="line number3 index2 alt2"><code class="keyword bold">using</code> <code class="keyword bold">namespace</code> <code class="plain">std;</code></div>
+<div class="line number4 index3 alt1">&nbsp;</div>
+<div class="line number5 index4 alt2"><code class="comments">// Factorial function</code></div>
+<div class="line number6 index5 alt1"><code class="color1 bold">int</code> <code class="plain">f(</code><code class="color1 bold">int</code> <code class="plain">n)</code></div>
+<div class="line number7 index6 alt2"><code class="plain">{</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code> <code class="plain">(n == 0 || n == 1)</code></div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">1;</code></div>
+<div class="line number11 index10 alt2">&nbsp;</div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Recursive condition</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">else</code></div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">n * f(n - 1);</code></div>
+<div class="line number15 index14 alt2"><code class="plain">}</code></div>
+<div class="line number16 index15 alt1">&nbsp;</div>
+<div class="line number17 index16 alt2"><code class="comments">// Driver code</code></div>
+<div class="line number18 index17 alt1"><code class="color1 bold">int</code> <code class="plain">main()</code></div>
+<div class="line number19 index18 alt2"><code class="plain">{</code></div>
+<div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">n = 5;</code></div>
+<div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">cout&lt;&lt;</code><code class="string">"factorial of "</code><code class="plain">&lt;&lt;n&lt;&lt;</code><code class="string">" is: "</code><code class="plain">&lt;&lt;f(n);</code></div>
+<div class="line number22 index21 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">0;</code></div>
+<div class="line number23 index22 alt2"><code class="plain">}</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">C</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="c"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="c" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="c"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="c" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_89611" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="comments">// C code to implement factorial</code></div>
+<div class="line number2 index1 alt1"><code class="preprocessor">#include &lt;stdio.h></code></div>
+<div class="line number3 index2 alt2">&nbsp;</div>
+<div class="line number4 index3 alt1"><code class="comments">// Factorial function</code></div>
+<div class="line number5 index4 alt2"><code class="color1 bold">int</code> <code class="plain">f(</code><code class="color1 bold">int</code> <code class="plain">n)</code></div>
+<div class="line number6 index5 alt1"><code class="plain">{</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code> <code class="plain">(n == 0 || n == 1)</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">1;</code></div>
+<div class="line number10 index9 alt1">&nbsp;</div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Recursive condition</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">else</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">n * f(n - 1);</code></div>
+<div class="line number14 index13 alt1"><code class="plain">}</code></div>
+<div class="line number15 index14 alt2">&nbsp;</div>
+<div class="line number16 index15 alt1"><code class="comments">// Driver code</code></div>
+<div class="line number17 index16 alt2"><code class="color1 bold">int</code> <code class="plain">main()</code></div>
+<div class="line number18 index17 alt1"><code class="plain">{</code></div>
+<div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">n = 5;</code></div>
+<div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions bold">printf</code><code class="plain">(</code><code class="string">"factorial of %d is: %d"</code><code class="plain">, n, f(n));</code></div>
+<div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">0;</code></div>
+<div class="line number22 index21 alt1"><code class="plain">}</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">Java</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="java"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="java" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="java"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="java" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_255340" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="comments">// Java code to implement factorial</code></div>
+<div class="line number2 index1 alt1"><code class="keyword">public</code> <code class="keyword">class</code> <code class="plain">GFG</code></div>
+<div class="line number3 index2 alt2"><code class="plain">{</code></div>
+<div class="line number4 index3 alt1">&nbsp;</div>
+<div class="line number5 index4 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="comments">// Factorial function</code></div>
+<div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="keyword">static</code> <code class="keyword">int</code> <code class="plain">f(</code><code class="keyword">int</code> <code class="plain">n)</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number8 index7 alt1">&nbsp;</div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(n == </code><code class="value">0</code> <code class="plain">|| n == </code><code class="value">1</code><code class="plain">)</code></div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="value">1</code><code class="plain">;</code></div>
+<div class="line number12 index11 alt1">&nbsp;</div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Recursive condition</code></div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code></div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">n * f(n - </code><code class="value">1</code><code class="plain">);</code></div>
+<div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number17 index16 alt2">&nbsp;</div>
+<div class="line number18 index17 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="comments">// Driver code</code></div>
+<div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="keyword">public</code> <code class="keyword">static</code> <code class="keyword">void</code> <code class="plain">main(String[] args) </code></div>
+<div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">int</code> <code class="plain">n = </code><code class="value">5</code><code class="plain">;</code></div>
+<div class="line number22 index21 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">System.out.println(</code><code class="string">"factorial of "</code> <code class="plain">+ n + </code><code class="string">" is: "</code> <code class="plain">+ f(n));</code></div>
+<div class="line number23 index22 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number24 index23 alt1"><code class="plain">}</code></div>
+<div class="line number25 index24 alt2">&nbsp;</div>
+<div class="line number26 index25 alt1"><code class="comments">// This code is contributed by divyesh072019.</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">Python3</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="python3"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="python3" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="python3"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="python3" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_331254" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="comments"># Python3 code to implement factorial</code></div>
+<div class="line number2 index1 alt1">&nbsp;</div>
+<div class="line number3 index2 alt2"><code class="comments"># Factorial function</code></div>
+<div class="line number4 index3 alt1"><code class="keyword">def</code> <code class="plain">f(n):</code></div>
+<div class="line number5 index4 alt2">&nbsp;</div>
+<div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments"># Stop condition</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(n </code><code class="keyword">=</code><code class="keyword">=</code> <code class="value">0</code> <code class="keyword">or</code> <code class="plain">n </code><code class="keyword">=</code><code class="keyword">=</code> <code class="value">1</code><code class="plain">):</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="value">1</code><code class="plain">;</code></div>
+<div class="line number9 index8 alt2">&nbsp;</div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments"># Recursive condition</code></div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code><code class="plain">:</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">n </code><code class="keyword">*</code> <code class="plain">f(n </code><code class="keyword">-</code> <code class="value">1</code><code class="plain">);</code></div>
+<div class="line number13 index12 alt2">&nbsp;</div>
+<div class="line number14 index13 alt1">&nbsp;</div>
+<div class="line number15 index14 alt2"><code class="comments"># Driver code</code></div>
+<div class="line number16 index15 alt1"><code class="keyword">if</code> <code class="plain">__name__</code><code class="keyword">=</code><code class="keyword">=</code><code class="string">'__main__'</code><code class="plain">:</code></div>
+<div class="line number17 index16 alt2">&nbsp;</div>
+<div class="line number18 index17 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">n </code><code class="keyword">=</code> <code class="value">5</code><code class="plain">;</code></div>
+<div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions">print</code><code class="plain">(</code><code class="string">"factorial of"</code><code class="plain">,n,</code><code class="string">"is:"</code><code class="plain">,f(n))</code></div>
+<div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div>
+<div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments"># This code is contributed by pratham76.</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">C#</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="csharp"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="csharp" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="csharp"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="csharp" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_906351" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="comments">// C# code to implement factorial</code></div>
+<div class="line number2 index1 alt1"><code class="keyword">using</code> <code class="plain">System;</code></div>
+<div class="line number3 index2 alt2"><code class="keyword">class</code> <code class="plain">GFG {</code></div>
+<div class="line number4 index3 alt1">&nbsp;</div>
+<div class="line number5 index4 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="comments">// Factorial function</code></div>
+<div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="keyword">static</code> <code class="keyword">int</code> <code class="plain">f(</code><code class="keyword">int</code> <code class="plain">n)</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(n == 0 || n == 1)</code></div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">1;</code></div>
+<div class="line number11 index10 alt2">&nbsp;</div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Recursive condition</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code></div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">n * f(n - 1);</code></div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number16 index15 alt1">&nbsp;</div>
+<div class="line number17 index16 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="comments">// Driver code</code></div>
+<div class="line number18 index17 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="keyword">static</code> <code class="keyword">void</code> <code class="plain">Main()</code></div>
+<div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">int</code> <code class="plain">n = 5;</code></div>
+<div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Console.WriteLine(</code><code class="string">"factorial of "</code> <code class="plain">+ n + </code><code class="string">" is: "</code> <code class="plain">+ f(n));</code></div>
+<div class="line number22 index21 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number23 index22 alt2"><code class="plain">}</code></div>
+<div class="line number24 index23 alt1">&nbsp;</div>
+<div class="line number25 index24 alt2"><code class="comments">// This code is contributed by divyeshrabadiya07.</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">Javascript</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="jscript"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i>
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="jscript" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="jscript"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i>
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="jscript" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_88483" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="plain">&lt;script></code></div>
+<div class="line number2 index1 alt1"><code class="comments">// JavaScript code to implement factorial</code></div>
+<div class="line number3 index2 alt2">&nbsp;</div>
+<div class="line number4 index3 alt1"><code class="comments">// Factorial function</code></div>
+<div class="line number5 index4 alt2"><code class="keyword">function</code> <code class="plain">f(n)</code></div>
+<div class="line number6 index5 alt1"><code class="plain">{</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;</code><code class="comments">// Stop condition</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code><code class="plain">(n == 0 || n == 1)</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">1;</code></div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;</code><code class="comments">// Recursive condition</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">n*f(n-1);</code></div>
+<div class="line number14 index13 alt1"><code class="plain">}</code></div>
+<div class="line number15 index14 alt2">&nbsp;</div>
+<div class="line number16 index15 alt1"><code class="comments">// Initialize variable n.</code></div>
+<div class="line number17 index16 alt2"><code class="plain">let n = 5;</code></div>
+<div class="line number18 index17 alt1"><code class="plain">document.write(</code><code class="string">"factorial of "</code><code class="plain">+ n +</code><code class="string">" is: "</code> <code class="plain">+ f(n));</code></div>
+<div class="line number19 index18 alt2">&nbsp;</div>
+<div class="line number20 index19 alt1"><code class="comments">// This code is contributed by probinsah.</code></div>
+<div class="line number21 index20 alt2"><code class="plain">&lt;/script></code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+</div></div>
+<div class="code-output"><strong>Output</strong></p><div style="text-align:center;margin:20px 0;max-height: 280px;" id="GFG_AD_gfg_outstream_incontent"></div>
+<pre>factorial of 5 is: 120</pre>
+</div>
+<p><strong>Time complexity: </strong>O(n)<br /><strong>Auxiliary Space: </strong>O(n)</p>
+&nbsp;</p>
+<h4>Working:</h4>
+<div style="width: 810px" class="wp-caption alignnone"><a href="https://media.geeksforgeeks.org/wp-content/uploads/20191108122114/Untitled-Diagram58.jpg"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20191108122114/Untitled-Diagram58.jpg" alt=""></a><p class="wp-caption-text">Diagram of factorial Recursion function for user input 5.</p></div><br/>
+
+<h3>Example: &nbsp;Real Applications of Recursion in real problems</h3>
+<p>Recursion is a powerful technique that has many applications in computer science and programming. Here are some of the common applications of recursion:</p>
+<ul>
+<li><strong>Tree and graph traversal</strong>: Recursion is frequently used for traversing and searching data structures such as trees and graphs. Recursive algorithms can be used to explore all the nodes or vertices of a tree or graph in a systematic way.</li>
+<li><strong>Sorting algorithms</strong>: Recursive algorithms are also used in sorting algorithms such as quicksort and merge sort. These algorithms use recursion to divide the data into smaller subarrays or sublists, sort them, and then merge them back together.</li>
+<li><strong>Divide-and-conquer algorithms</strong>: Many algorithms that use a divide-and-conquer approach, such as the binary search algorithm, use recursion to break down the problem into smaller subproblems.</li>
+<li><strong>Fractal generation</strong>: Fractal shapes and patterns can be generated using recursive algorithms. For example, the Mandelbrot set is generated by repeatedly applying a recursive formula to complex numbers.</li>
+<li><strong>Backtracking algorithms</strong>: Backtracking algorithms are used to solve problems that involve making a sequence of decisions, where each decision depends on the previous ones. These algorithms can be implemented using recursion to explore all possible paths and backtrack when a solution is not found.</li>
+<li><strong>Memoization</strong>: Memoization is a technique that involves storing the results of expensive function calls and returning the cached result when the same inputs occur again. Memoization can be implemented using recursive functions to compute and cache the results of subproblems.</li>
+</ul>
+<p>These are just a few examples of the many applications of recursion in computer science and programming. Recursion is a versatile and powerful tool that can be used to solve many different types of problems.</p>
+<h3>Explanation: one real example of recursion:</h3>
+<p>Recursion is a programming technique that involves a function calling itself. It can be a powerful tool for solving complex problems, but it also requires careful implementation to avoid infinite loops and stack overflows.&nbsp;</p>
+<h4>Here&#8217;s an example of implementing recursion in Python:</h4>
+<div class="responsive-tabs">
+<h4 class="tabtitle">C++</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="cpp"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i>
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="cpp" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="cpp"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i>
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i>
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="cpp" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_805663" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="preprocessor">#include &lt;iostream></code></div>
+<div class="line number2 index1 alt1"><code class="keyword bold">using</code> <code class="keyword bold">namespace</code> <code class="plain">std;</code></div>
+<div class="line number3 index2 alt2"><code class="color1 bold">int</code> <code class="plain">factorial(</code><code class="color1 bold">int</code> <code class="plain">n)</code></div>
+<div class="line number4 index3 alt1"><code class="plain">{</code></div>
+<div class="line number5 index4 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+<div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Base case: if n is 0 or 1, return 1</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code> <code class="plain">(n == 0 || n == 1) {</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">1;</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number10 index9 alt1">&nbsp;</div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Recursive case: if n is greater than 1, </code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="comments">// call the function with n-1 and multiply by n</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">else</code> <code class="plain">{</code></div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">n * factorial(n - 1);</code></div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number16 index15 alt1"><code class="plain">}</code></div>
+<div class="line number17 index16 alt2">&nbsp;</div>
+<div class="line number18 index17 alt1"><code class="color1 bold">int</code> <code class="plain">main() </code></div>
+<div class="line number19 index18 alt2"><code class="plain">{</code></div>
+<div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+<div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Call the factorial function and print the result</code></div>
+<div class="line number22 index21 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">result = factorial(5);</code></div>
+<div class="line number23 index22 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">cout &lt;&lt; result &lt;&lt;endl; </code><code class="comments">// Output: 120</code></div>
+<div class="line number24 index23 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">0;</code></div>
+<div class="line number25 index24 alt2"><code class="plain">}</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">Java</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="java"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i>
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="java" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="java"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i>
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i>
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="java" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_614354" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="keyword">import</code> <code class="plain">java.util.*;</code></div>
+<div class="line number2 index1 alt1">&nbsp;</div>
+<div class="line number3 index2 alt2"><code class="keyword">class</code> <code class="plain">Main {</code></div>
+<div class="line number4 index3 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">public</code> <code class="keyword">static</code> <code class="keyword">int</code> <code class="plain">factorial(</code><code class="keyword">int</code> <code class="plain">n)</code></div>
+<div class="line number5 index4 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Base case: if n is 0 or 1, return 1</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(n == </code><code class="value">0</code> <code class="plain">|| n == </code><code class="value">1</code><code class="plain">) {</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="value">1</code><code class="plain">;</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number10 index9 alt1">&nbsp;</div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Recursive case: if n is greater than 1,</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// call the function with n-1 and multiply by n</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code> <code class="plain">{</code></div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">n * factorial(n - </code><code class="value">1</code><code class="plain">);</code></div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number17 index16 alt2">&nbsp;</div>
+<div class="line number18 index17 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">public</code> <code class="keyword">static</code> <code class="keyword">void</code> <code class="plain">main(String[] args)</code></div>
+<div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Call the factorial function and print the result</code></div>
+<div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">int</code> <code class="plain">result = factorial(</code><code class="value">5</code><code class="plain">);</code></div>
+<div class="line number22 index21 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">System.out.println(result); </code><code class="comments">// Output: 120</code></div>
+<div class="line number23 index22 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number24 index23 alt1"><code class="plain">}</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">Python3</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="python3"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i>
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="python3" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="python3"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i>
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i>
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="python3" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_340835" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="keyword">def</code> <code class="plain">factorial(n):</code></div>
+<div class="line number2 index1 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments"># Base case: if n is 0 or 1, return 1</code></div>
+<div class="line number3 index2 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">n </code><code class="keyword">=</code><code class="keyword">=</code> <code class="value">0</code> <code class="keyword">or</code> <code class="plain">n </code><code class="keyword">=</code><code class="keyword">=</code> <code class="value">1</code><code class="plain">:</code></div>
+<div class="line number4 index3 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="value">1</code></div>
+<div class="line number5 index4 alt2">&nbsp;</div>
+<div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments"># Recursive case: if n is greater than 1, call the function with n-1 and multiply by n</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code><code class="plain">:</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">n </code><code class="keyword">*</code> <code class="plain">factorial(n</code><code class="keyword">-</code><code class="value">1</code><code class="plain">)</code></div>
+<div class="line number9 index8 alt2">&nbsp;</div>
+<div class="line number10 index9 alt1"><code class="comments"># Call the factorial function and print the result</code></div>
+<div class="line number11 index10 alt2"><code class="plain">result </code><code class="keyword">=</code> <code class="plain">factorial(</code><code class="value">5</code><code class="plain">)</code></div>
+<div class="line number12 index11 alt1"><code class="functions">print</code><code class="plain">(result)&nbsp; </code><code class="comments"># Output: 120</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">C#</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="csharp"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i>
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="csharp" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="csharp"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i>
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i>
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="csharp" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_221332" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="keyword">using</code> <code class="plain">System;</code></div>
+<div class="line number2 index1 alt1">&nbsp;</div>
+<div class="line number3 index2 alt2"><code class="keyword">class</code> <code class="plain">MainClass {</code></div>
+<div class="line number4 index3 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">public</code> <code class="keyword">static</code> <code class="keyword">int</code> <code class="plain">factorial(</code><code class="keyword">int</code> <code class="plain">n)</code></div>
+<div class="line number5 index4 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+<div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Base case: if n is 0 or 1, return 1</code></div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(n == 0 || n == 1) {</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">1;</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number10 index9 alt1">&nbsp;</div>
+<div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Recursive case: if n is greater than 1,</code></div>
+<div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// call the function with n-1 and multiply by n</code></div>
+<div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">else</code> <code class="plain">{</code></div>
+<div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">n * factorial(n - 1);</code></div>
+<div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number17 index16 alt2">&nbsp;</div>
+<div class="line number18 index17 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">public</code> <code class="keyword">static</code> <code class="keyword">void</code> <code class="plain">Main (</code><code class="keyword">string</code><code class="plain">[] args) {</code></div>
+<div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Call the factorial function and print the result</code></div>
+<div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">int</code> <code class="plain">result = factorial(5);</code></div>
+<div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Console.WriteLine(result); </code><code class="comments">// Output: 120</code></div>
+<div class="line number22 index21 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number23 index22 alt2"><code class="plain">}</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+
+</div><h4 class="tabtitle">Javascript</h4>
+<div class="tabcontent">
+
+<div class="code-block">
+<div class="code-gutter">
+<div class="editor-buttons-container">
+<div class="editor-buttons">
+<div class="editor-buttons-div" title="Run and Edit">
+                                    <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+<div  id = "run-and-edit-loader" class="ring-load"></div>
+<p>                                    <i id="run-and-edit-button" title="Edit Code" lang="jscript"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i>
+                                    <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+<div id = "run-code-loader" class="ring-load"></div>
+<p>                                    <i id="run-code-button" lang="jscript" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+<div  id = "generate-url-loader" class="ring-load"></div>
+<p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="jscript"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i>
+                                    <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i>
+                                    <i id = "edit-on-ide-button" title="Edit on IDE"  lang="jscript" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                </div>
+</p></div>
+</p></div>
+</p></div>
+<div class= "code-container">
+<div id="highlighter_831514" class="syntaxhighlighter nogutter  ">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="keyword">function</code> <code class="plain">factorial(n) {</code></div>
+<div class="line number2 index1 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="comments">// Base case: if n is 0 or 1, return 1</code></div>
+<div class="line number3 index2 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(n === 0 || n === 1) {</code></div>
+<div class="line number4 index3 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">1;</code></div>
+<div class="line number5 index4 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number6 index5 alt1">&nbsp;</div>
+<div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="comments">// Recursive case: if n is greater than 1, call the function with n-1 and multiply by n</code></div>
+<div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="keyword">else</code> <code class="plain">{</code></div>
+<div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">n * factorial(n - 1);</code></div>
+<div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">}</code></div>
+<div class="line number11 index10 alt2"><code class="plain">}</code></div>
+<div class="line number12 index11 alt1">&nbsp;</div>
+<div class="line number13 index12 alt2"><code class="comments">// Call the factorial function and print the result</code></div>
+<div class="line number14 index13 alt1"><code class="plain">const result = factorial(5);</code></div>
+<div class="line number15 index14 alt2"><code class="plain">console.log(result); </code><code class="comments">// Output: 120</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+</div></div>
+<div class="code-output"><strong>Output</strong></p>
+<pre>120</pre>
+</div>
+<p>In this example, we define a function called factorial that takes an integer n as input. The function uses recursion to compute the factorial of n (i.e., the product of all positive integers up to n).</p>
+<p>The factorial function first checks if n is 0 or 1, which are the base cases. If n is 0 or 1, the function returns 1, since 0! and 1! are both 1.</p>
+<p>If n is greater than 1, the function enters the recursive case. It calls itself with n-1 as the argument and multiplies the result by n. This computes n! by recursively computing (n-1)!.</p>
+<p>It&#8217;s important to note that recursion can be inefficient and lead to stack overflows if not used carefully. Each function call adds a new frame to the call stack, which can cause the stack to grow too large if the recursion is too deep. In addition, recursion can make the code more difficult to understand and debug, since it requires thinking about multiple levels of function calls.</p><div style="text-align:center;margin:20px 0;max-height: 280px;" id="GFG_AD_gfg_outstream_incontent"></div>
+<p>However, recursion can also be a powerful tool for solving complex problems, particularly those that involve breaking a problem down into smaller subproblems. When used correctly, recursion can make the code more elegant and easier to read.</p>
+<p><strong>What are the disadvantages of recursive programming over iterative programming?</strong>&nbsp;<br />Note that both recursive and iterative programs have the same problem-solving powers, i.e., every recursive program can be written iteratively and vice versa is also true. The recursive program has greater space requirements than the iterative program as all functions will remain in the stack until the base case is reached. It also has greater time requirements because of function calls and returns overhead.</p>
+<p>Moreover, due to the smaller length of code, the codes are difficult to understand and hence extra care has to be practiced while writing the code. The computer may run out of memory if the recursive calls are not properly checked.</p>
+<p><strong>What are the advantages of recursive programming over iterative programming?</strong>&nbsp;<br />Recursion provides a clean and simple way to write code. Some problems are inherently recursive like tree traversals, <a href="https://www.geeksforgeeks.org/c-program-for-tower-of-hanoi/">Tower of Hanoi</a>, etc. For such problems, it is preferred to write recursive code. We can write such codes also iteratively with the help of a stack data structure. For example refer <a href="https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion/">Inorder Tree Traversal without Recursion</a>, <a href="https://www.geeksforgeeks.org/iterative-tower-of-hanoi/">Iterative Tower of Hanoi</a>.</p>
+<p><strong>Summary of Recursion:</strong></p>
+<ul>
+<li>There are two types of cases in recursion i.e. recursive case and a base case.</li>
+<li>The base case is used to terminate the recursive function when the case turns out to be true.</li>
+<li>Each recursive call makes a new copy of that method in the stack memory.</li>
+<li>Infinite recursion may lead to running out of stack memory.</li>
+<li>Examples of Recursive algorithms: Merge Sort, Quick Sort, Tower of Hanoi, Fibonacci Series, Factorial Problem, etc.</li>
+</ul>
+
+							
+		<blockquote >
+                            <center>
+  "Recursion: it's like trying to explain recursion by explaining recursion by explaining recursion... until you realize you've entered a hall of mirrors with no exit!"
+                            </center>
+                          </blockquote>
+							
+							
+							
+							<h4 class="mb-4">Reference books:</h4>
+
+                          <p><ul>
+                            <li><i>"Introduction to Algorithms" by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein</i></li>
+                              <li><i>"Algorithms" by Robert Sedgewick and Kevin Wayne </i></li>
+                              <li><i>"Think Like a Programmer: An Introduction to Creative Problem Solving" by V. Anton Spraul</i></li>
+                              <li><i>"Data Structures and Algorithms in Python" by Michael T. Goodrich, Roberto Tamassia, and Michael H. Goldwasser</i></li>
+							  <li><i>"Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People" by Aditya Bhargava </i></li>
+                            </ul>
+                            </p>
+
+                      </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+		
+        <footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mb-4 pb-2">
+                        <img src="images/savvy-high-resolution-logo-black-transparent (1).png" width="177" height="57" alt=""/><a class="navbar-brand mb-2" href="index.html">
+                                                    <span>&nbsp;</span> </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <h6 class="site-footer-title mb-3">Resources</h6>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="index.html#section_1" class="site-footer-link">Home</a>
+                            </li>
+							
+							 <li class="site-footer-link-item">
+                                <a href="index.html#section_2" class="site-footer-link">Topics</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="index.html#section_3" class="site-footer-link">How it works</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" class="site-footer-link">Practice</a>
+                            </li>
+
+                            
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                        <h6 class="site-footer-title mb-3">Contact Us</h6>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="https://www.linkedin.com/in/basicprakhar/" class="site-footer-link">
+                            Prakhar Agrawal <br>
+                          </a>
+                        </p>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="https://www.linkedin.com/in/sanchit-dhiman-901a46145/" class="site-footer-link">
+                            Sanchit Kumar Dhiman <br>
+                          </a>
+                        </p>
+						
+						<p class="text-white d-flex mb-1">
+                            <a href="https://www.linkedin.com/in/shambhavit48/" class="site-footer-link">
+                            Shambhavi Tiwari <br>
+                          </a>
+                        </p>
+                  </div>
+
+                    
+
+                        
+                        
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
