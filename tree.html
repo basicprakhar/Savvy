@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Introduction to Web Design</title>
+        <title>Tree Data Structure</title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
 
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-        <link href="css/web_dev_css.css" rel="stylesheet">
+        <link href="css/c_programming_css.css" rel="stylesheet">
 <!--
 
 TemplateMo 590 topic listing
@@ -95,11 +95,11 @@ https://templatemo.com/tm-590-topic-listing
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
 
-                                    <li class="breadcrumb-item active" aria-current="page">Web Design</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Tree</li>
                                 </ol>
                             </nav>
 
-                            <h2 class="text-white">Introduction to<br>Web Design</h2>
+                            <h2 class="text-white">Tree<br>Data Structure</h2>
 
                             <div class="d-flex align-items-center mt-5">
                                 <a href="#topics-detail" class="btn custom-btn custom-border-btn smoothscroll me-4">Read More</a>
@@ -110,7 +110,7 @@ https://templatemo.com/tm-590-topic-listing
 
                         <div class="col-lg-5 col-12">
                             <div class="topics-detail-block bg-white shadow-lg">
-                                <img src="images/web.png" class="topics-detail-block-image img-fluid">
+                                <img src="images/C-programming-1024x530-1.png" class="topics-detail-block-image img-fluid">
                             </div>
                         </div>
 
@@ -124,44 +124,37 @@ https://templatemo.com/tm-590-topic-listing
                     <div class="row">
 
                         <div class="col-lg-8 col-12 m-auto">
-                            <h4 class="mb-4">What is Web Design?</h4>
-
+                            <h4 class="mb-4">What is Tree Data Structure?</h4>
                             <p>
-                                Web design refers to the design of websites. It usually refers to the user experience aspects of website development rather than software development. Web design used to be focused on designing websites for desktop browsers; however, since the mid-2010s, design for mobile and tablet browsers has become ever-increasingly important.
-                                <br><br>A web designer works on a <strong>website's appearance, layout, and,</strong> in some cases, <strong>content</strong>.
+                                Tree Data Structure is a hierarchical data structure in which a collection of elements known as nodes are connected to each other via edges such that there exists exactly one path between any two nodes.
+                            </p>
+
+                            <img src = "images/Tree-Data-Structure--nEW.png" width = 750>
+
+                            <h4 class="mb-4"><br>Types of Tree Data Structure:</h4>
+                            <p>
                                 <ul>
-                                    <li>Appearance relates to the colors, typography, and images used.</li>
-                                    <li>Layout refers to how information is structured and categorized. A good web design is easy to use, aesthetically pleasing, and suits the user group and brand of the website.</li>
-                                    <li>A well-designed website is simple and communicates clearly to avoid confusing users. It wins and fosters the target audience's trust, removing as many potential points of user frustration as possible.</li>
+                                    <li>
+                                        <dl>
+                                            <dt>Binary tree</dt>
+                                            <dd>In a binary tree, each node can have a maximum of two children linked to it. Some common types of binary trees include full binary trees, complete binary trees, balanced binary trees, and degenerate or pathological binary trees.</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Ternary Tree</dt>
+                                            <dd>A Ternary Tree is a tree data structure in which each node has at most three child nodes, usually distinguished as “left”, “mid” and “right”.</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>N-ary Tree or Generic Tree</dt>
+                                            <dd>Generic trees are a collection of nodes where each node is a data structure that consists of records and a list of references to its children(duplicate references are not allowed). Unlike the linked list, each node stores the address of multiple nodes.</dd>
+                                        </dl>
+                                    </li>
                                 </ul>
                             </p>
-
-                            <h4 class="mb-4"><br>What is Responsive Web Design?</h4>
-                            <img src = "images/responsive-design.png" width = 750>
-                            <p>
-                                Responsive Web Design (a.k.a. "Responsive" or "Responsive Design") is an approach to designing web content that appears regardless of the resolution governed by the device. It’s typically accomplished with viewport breakpoints (resolution cut-offs for when content scales to that view). The viewports should adjust logically on tablets, phones, and desktops of any resolution.
-                            </p>
-                            <img src = "images/ezgif.com-webp-to-gif-converted.gif" width = 750>
-                            <p>
-                                Responsive designs respond to changes in browser width by adjusting the placement of design elements to fit in the available space. If you open a responsive site on the desktop and change the browser window's size, the content will dynamically rearrange itself to fit the browser window. The site checks for the available space on mobile phones and then presents itself in the ideal arrangement.
-                            </p>
-                            <h4 class="mb-4"><br>What is Adaptive Web Design?</h4>
-                            <img src = "images/02-06-01-adaptive-vs-responsive-PhotoRoom.png-PhotoRoom.png" width = 750>
-                            <p>
-                                Adaptive design is similar to responsive design—both are approaches for designing across a diverse range of devices; the difference lies in how the tailoring of the content takes place.
-                                <br><br>In the case of responsive design, all content and functionality are the same for every device. Therefore, a large-screen desktop and smartphone browser displays the same content. The only difference is in the layout of the content.
-                                <br><br>Adaptive design takes responsiveness up a notch. While responsive design focuses on just the device, adaptive design considers both the device and the user’s context. This means that you can design <strong>context-aware experiences</strong>—a web application's content and functionality can look and behave very differently from the version served on the desktop.
-                                <br><br>For example, if an adaptive design detects low bandwidth or the user is on a mobile device instead of a desktop device, it might not load a large image (e.g., an infographic). Instead, it might show a smaller summary version of the infographic.
-                                <br><br>Another example could be to detect if the device is an older phone with a smaller screen. The website can show larger call-to-action buttons than usual.
-                            </p>
-                            <blockquote>
-                                “The power of the Web is in its universality.
-                                <br>Access by everyone regardless of disability is an essential aspect.”
-                                
-                                <br><br>—Tim Berners-Lee, W3C Director and inventor of the World Wide Web
-                            </blockquote>
                         </div>
-
                     </div>
                 </div>
             </section>
