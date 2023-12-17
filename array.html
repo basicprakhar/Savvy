@@ -132,7 +132,280 @@ https://templatemo.com/tm-590-topic-listing
                                 <br><br>This makes it easier to calculate the position of each element by simply adding an offset to a base value, i.e., the memory location of the first element of the array (generally denoted by the name of the array). The base value is index 0 and the difference between the two indexes is the offset.
                             </p>
                             <img src = "images/array.png" width = 750> 
+							<br/>
+							
+						    <h4>&nbsp;</h4>
+						    
+							<h4>Basic terminologies of array</h4>
+							<ul>
+<li value="1"><b><strong>Array Index:</strong></b><span> In an array, elements are identified by their indexes. Array index starts from 0.</span></li>
+<li value="2"><b><strong>Array element: </strong></b><span>Elements are items stored in an array and can be accessed by their index.</span></li>
+<li value="3"><b><strong>Array Length:</strong></b><span> The length of an array is determined by the number of elements it can contain.&nbsp;</span></li>
+</ul>
+							<h4><b><strong>Why Array Data Structures is needed?</strong></b></h4>
+							<p dir="ltr"><span>Assume there is a class of five students and if we have to keep records of their marks in examination then, we can do this by declaring five variables individual and keeping track of records but what if the number of students becomes very large, it would be challenging to manipulate and maintain the data.</span></p>
+							<p dir="ltr"><span>What it means is that, we can use normal variables (v1, v2, v3, ..) when we have a small number of objects. But if we want to store a large number of instances, it becomes difficult to manage them with normal variables. </span><b><strong>The idea of an array is to represent many instances in one variable</strong></b><span>..</span></p>
+							
+							<h4><b><strong>Types of arrays:&nbsp;</strong></b></h4>
+<p dir="ltr"><span>There are majorly two types of arrays:</span></p>
+<ul>
+<li value="1"><a href="https://www.geeksforgeeks.org/difference-between-one-dimensional-and-two-dimensional-array/"><b><strong>One-dimensional array (1-D arrays)</strong></b></a><b><strong>:</strong></b><span> You can imagine a 1d array as a row, where elements are stored one after another.</span><br /><span>&nbsp;</span></li>
+</ul>
+<div style="width: 810px" class="wp-caption alignnone"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20220721112600/1Darray.png" alt="1D array" width="inherit" height="inherit"><p class="wp-caption-text">1D array</p></div>
+<ul>
+<li value="1"><b><strong>Two-dimensional array:</strong></b><span> 2-D </span><a href="https://www.geeksforgeeks.org/top-data-structures-that-every-programmer-must-know/Two%20Dimensional%20Array:%20%20It%20is%20a%20list%20of%20lists%20of%20the%20variable%20of%20the%20same%20data%20type.%20It%20also%20allows%20random%20access%20and%20all%20the%20elements%20can%20be%20accessed%20with%20the%20help%20of%20their%20index.%20It%20can%20also%20be%20seen%20as%20a%20collection%20of%201D%20arrays.%20It%20is%20also%20known%20as%20the%20Matrix.%20Its%20dimension%20can%20be%20increased%20from%202%20to%203%20and%204%20so%20on.%20They%20all%20are%20referred%20to%20as%20a%20multi-dimension%20array.%20The%20most%20common%20multidimensional%20array%20is%20a%202D%20array.%20Representation%20of%202%20D%20array:"><span>Multidimensional arrays</span></a><span> can be considered as an array of arrays or as a matrix consisting of rows and columns.</span><br /><span>&nbsp;</span></li>
+</ul>
+<div style="width: 810px" class="wp-caption alignnone"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20220721112715/2Darray.png" alt="2D array" width="inherit" height="inherit"><p class="wp-caption-text">2D array</p></div>
+<ul>
+<li value="1"><b><strong>Three-dimensional array:</strong></b><span> A 3-D </span><a href="https://www.geeksforgeeks.org/top-data-structures-that-every-programmer-must-know/Two%20Dimensional%20Array:%20%20It%20is%20a%20list%20of%20lists%20of%20the%20variable%20of%20the%20same%20data%20type.%20It%20also%20allows%20random%20access%20and%20all%20the%20elements%20can%20be%20accessed%20with%20the%20help%20of%20their%20index.%20It%20can%20also%20be%20seen%20as%20a%20collection%20of%201D%20arrays.%20It%20is%20also%20known%20as%20the%20Matrix.%20Its%20dimension%20can%20be%20increased%20from%202%20to%203%20and%204%20so%20on.%20They%20all%20are%20referred%20to%20as%20a%20multi-dimension%20array.%20The%20most%20common%20multidimensional%20array%20is%20a%202D%20array.%20Representation%20of%202%20D%20array:"><span>Multidimensional array</span></a><span> contains three dimensions, so it can be considered an array of two-dimensional arrays.</span><br /><span>&nbsp;</span></li>
+</ul>
+<div style="width: 810px" class="wp-caption alignnone"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20230321164742/3D-array.png" alt="3D array" width="1095" height="inherit"><p class="wp-caption-text">3D array</p></div>
+<h4><span>&nbsp;</span><b><strong>Types of Array operations:</strong></b></h4>
+<ul>
+<li value="1"><span>Traversal: Traverse through the elements of an array.</span></li>
+<li value="2"><span>Insertion: Inserting a new element in an array.</span></li>
+<li value="3"><span>Deletion: Deleting element from the array.</span></li>
+<li value="4"><span>Searching: &nbsp;Search for an element in the array.</span></li>
+<li value="5"><span>Sorting: Maintaining the order of elements in the array.</span></li>
+</ul>
+<h4><a href="https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-array-data-structure/#:~:text=Advantages%20of%20array%20data%20structure%3A"><b><strong>Advantages of using Arrays</strong></b></a><b><strong>:</strong></b></h4>
+<ul>
+<li value="1"><span>Arrays allow random access to elements. This makes accessing elements by position faster.</span></li>
+<li value="2"><span>Arrays have better cache locality which makes a pretty big difference in performance.</span></li>
+<li value="3"><span>Arrays represent multiple data items of the same type using a single name.</span></li>
+<li value="4"><span>Arrays store multiple data of similar types with the same name.</span></li>
+<li value="5"><span>Array data structures are used to implement the other data structures like linked lists, stacks, queues, trees, graphs, etc.</span></li>
+</ul>
+<h4><a href="https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-array-data-structure/#:~:text=Disadvantages%20of%20array%20data%20structure"><b><strong>Disadvantages of Array</strong></b></a><b><strong>:</strong></b></h4>
+<ul>
+<li value="1"><span>As arrays have a fixed size, once the memory is allocated to them, it cannot be increased or decreased, making it impossible to store extra data if required. An array of fixed size is referred to as a static array.&nbsp;</span></li>
+<li value="2"><span>Allocating less memory than required to an array leads to loss of data.</span><br /><span>An array is homogeneous in nature so, a single array cannot store values of different data types.&nbsp;</span></li>
+<li value="3"><span>Arrays store data in contiguous memory locations, which makes deletion and insertion very difficult to implement. This problem is overcome by implementing linked lists, which allow elements to be accessed sequentially. &nbsp;</span></li>
+</ul>
+<h4><a href="https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-array-data-structure/#:~:text=Applications%20of%20Array%20Data%20Structure"><b><strong>Application of Array</strong></b></a><b><strong>:</strong></b></h4>
+<ul>
+<li value="1"><span>They are used in the implementation of other data structures such as array lists, heaps, hash tables, vectors, and matrices.</span></li>
+<li value="2"><span>Database records are usually implemented as arrays.</span></li>
+<li value="3"><span>It is used in lookup tables by computer.</span></li>
+<li value="4"><span>It is used for different sorting algorithms such as bubble sort insertion sort, merge sort, and quick sort.</span></li>
+</ul>
+							
+							<h4>Top theorotical interview Questions</h4>
+							<p>&nbsp;</p>
+<table class="GFGEditorTheme__table">
+  <colgroup>
+<col>
+<col>
+<col></colgroup>
+<thead>
+<tr>
+<th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader">
+<h5><span>S.no</span></h5>
+</th>
+<th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader">
+<h5><span>&nbsp;Question</span></h5>
+</th>
+<th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader">
+<h5><span>Answer</span></h5>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>1</span></td>
+<td class="GFGEditorTheme__tableCell"><span>What will happen if you do not initialize an Array?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/what-happens-array-is-not-initialized/#:~:text=If%20the%20array%20is%20not,Default%20values."><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>2</span></td>
+<td class="GFGEditorTheme__tableCell"><span>Why is the complexity of fetching a value from an array be O(1)</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/why-does-accessing-an-array-element-take-o1-time/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>3</span></td>
+<td class="GFGEditorTheme__tableCell"><span>When should you use an Array over a List?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/when-to-use-array-over-a-list/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>4</span></td>
+<td class="GFGEditorTheme__tableCell"><span>What is a circularly sorted array?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/circularly-sorted-array-sorted-and-rotated-array/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>5</span></td>
+<td class="GFGEditorTheme__tableCell"><span>Comparing two arrays using hashmap?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/check-if-two-arrays-are-equal-or-not/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>6</span></td>
+<td class="GFGEditorTheme__tableCell"><span>“What are the advantages of a linked list over an array? In which scenarios do&nbsp;</span><br><span>we use LinkedList and when Array?”</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/linked-list-vs-array/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>7</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How do I iterate rows and columns of a multidimensional array?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/how-to-iterate-a-multidimensional-array/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>8</span></td>
+<td class="GFGEditorTheme__tableCell"><span>What is meant by Sparse Array?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/what-is-meant-by-sparse-array/#:~:text=A%20sparse%20array%20or%20sparse,of%20the%20elements%20are%20zero."><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>9</span></td>
+<td class="GFGEditorTheme__tableCell"><span>What are the benefits of Heap over Sorted Arrays?&nbsp;</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/benefits-of-heap-over-sorted-arrays/#:~:text=Heap%20takes%20less%20time%20complexity,as%20compared%20to%20sorted%20arrays."><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>10</span></td>
+<td class="GFGEditorTheme__tableCell"><span>Is there any difference between int[] a and int a[]?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/is-there-any-difference-between-int-a-and-int-a-in-java/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>11</span></td>
+<td class="GFGEditorTheme__tableCell"><span>Can we declare array size as a negative number?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/can-array-size-be-declared-as-a-negative-number/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>12</span></td>
+<td class="GFGEditorTheme__tableCell"><span>We know that Arrays are objects so why cannot we write strArray.length()?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/why-array-length-gives-error-when-used-in-java/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>13</span></td>
+<td class="GFGEditorTheme__tableCell"><span>What are the advantages of Sorted Arrays? &nbsp;</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/faster-process-sorted-array-unsorted-array/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>14</span></td>
+<td class="GFGEditorTheme__tableCell"><span>What defines the dimensionality of an Array? &nbsp;</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/what-is-meant-by-dimensionality-of-an-array/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>15</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How to check array contains a value or not?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/check-if-a-value-is-present-in-an-array-in-java/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>16</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How to create an array/list inside another array/list?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/python-insert-list-in-another-list/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>17</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How to get the largest and smallest number in an array?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/c-program-find-largest-element-array/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>18</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How can I return coordinates/indexes of a string in a multidimensional array?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/find-and-return-index-of-given-string-in-a-multidimensional-array/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>19</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How do I remove objects from an array in Java?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/how-to-remove-given-object-from-an-array-in-java/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>20</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How does C allocate data items in a multidimensional array?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/how-does-c-allocate-memory-of-data-items-in-a-multidimensional-array/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>21</span></td>
+<td class="GFGEditorTheme__tableCell"><span>Get adjacent elements in a two-dimensional array?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/find-all-adjacent-elements-of-given-element-in-a-2d-array-or-matrix/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>22</span></td>
+<td class="GFGEditorTheme__tableCell"><span>C++ How to use and pass a 3-dimensional char array?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/how-to-pass-and-return-a-3-dimensional-array-in-c/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>23</span></td>
+<td class="GFGEditorTheme__tableCell"><span>Anonymous Array in Java</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/anonymous-array-java/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>24</span></td>
+<td class="GFGEditorTheme__tableCell"><span>&nbsp;What is the default value of Array in Java?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/default-array-values-in-java/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>25</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How to copy an array into another array?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/array-copy-in-java"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>26</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How to iterate an array in java?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/iterating-arrays-java/#:~:text=Iterating%20over%20an%20array%20means,each%20element%20one%20by%20one."><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>27</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How to merge two sorted Arrays into a Sorted Array?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/merge-two-sorted-arrays/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>28</span></td>
+<td class="GFGEditorTheme__tableCell"><span>Can we make the array volatile in Java?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/volatile-keyword-in-java/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>29</span></td>
+<td class="GFGEditorTheme__tableCell"><span>What is the logic to reverse the array?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>30</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How to get the index of an array element?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/find-the-index-of-an-array-element-in-java/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>31</span></td>
+<td class="GFGEditorTheme__tableCell"><span>Can we extend an array after initialization?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/how-to-extend-an-array-after-initialisation-in-java/https://www.geeksforgeeks.org/how-to-extend-an-array-after-initialisation-in-java/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>32</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How to fill elements (initialize at once) in an array?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/how-to-fill-initialize-at-once-an-array-in-java/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>33</span></td>
+<td class="GFGEditorTheme__tableCell"><span>Difference between Array and String in Java</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/difference-between-array-and-string-in-java/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>34</span></td>
+<td class="GFGEditorTheme__tableCell"><span>Print all subarrays with 0 sum</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>35</span></td>
+<td class="GFGEditorTheme__tableCell"><span>Equilibrium index of an array</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/equilibrium-index-of-an-array/"><span>View</span></a></td>
 
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>36</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How to check array contains a value or not?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/check-if-a-value-is-present-in-an-array-in-java/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>37</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How to get the top two numbers from an array?</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/c-program-find-largest-element-array/"><span>View</span></a></td>
+</tr>
+<tr>
+<td class="GFGEditorTheme__tableCell"><span>38</span></td>
+<td class="GFGEditorTheme__tableCell"><span>How to implement 3 Stacks with one Array?&nbsp;</span></td>
+<td class="GFGEditorTheme__tableCell"><a href="https://www.geeksforgeeks.org/efficiently-implement-k-stacks-single-array/#:~:text=Class%20in%20Java-,How%20to%20efficiently%20implement%20k%20stacks%20in%20a%20single%20array,-%3F"><span>View</span></a></td>
+</tr>
+</tbody>
+</table>
+							
+							
                         </div>
 
                     </div>
