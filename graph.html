@@ -21,13 +21,7 @@
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/c_programming_css.css" rel="stylesheet">
-<!--
 
-TemplateMo 590 topic listing
-
-https://templatemo.com/tm-590-topic-listing
-
--->
     </head>
     
     <body id="top">
@@ -110,7 +104,7 @@ https://templatemo.com/tm-590-topic-listing
 
                         <div class="col-lg-5 col-12">
                             <div class="topics-detail-block bg-white shadow-lg">
-                                <img src="images/what-is-graphs-in-data-structure.avif" class="topics-detail-block-image img-fluid">
+                                <img src="images/graph18.jpg" class="topics-detail-block-image img-fluid">
                             </div>
                         </div>
 
@@ -126,27 +120,176 @@ https://templatemo.com/tm-590-topic-listing
                         <div class="col-lg-8 col-12 m-auto">
                             <h4 class="mb-4">What is Graph Data Structure?</h4>
                             <p>A Graph is a non-linear data structure consisting of vertices and edges. The vertices are sometimes also referred to as nodes and the edges are lines or arcs that connect any two nodes in the graph. More formally a Graph is composed of a set of vertices( V ) and a set of edges( E ). The graph is denoted by G(E, V).</p>
+<p>
 
-                            <h4 class="mb-4"><br>Components of a Graph</h4>
-                            <p>
-                                <ul>
-                                    <li>
-                                        <dl>
-                                            <dt>Vertices</dt>
-                                            <dd>Vertices are the fundamental units of the graph. Sometimes, vertices are also known as vertex or nodes. Every node/vertex can be labeled or unlabelled.</dd>
-                                        </dl>
-                                    </li>
-                                    <li>
-                                        <dl>
-                                            <dt>Edges</dt>
-                                            <dd>Edges are drawn or used to connect two nodes of the graph. It can be ordered pair of nodes in a directed graph. Edges can connect any two nodes in any possible way. There are no rules. Sometimes, edges are also known as arcs. Every edge can be labeled/unlabelled.</dd>
-                                        </dl>
-                                    </li>
-                                </ul>
-                            </p>
+</p>
                             <p>
                                 Graphs are used to solve many real-life problems. Graphs are used to represent networks. The networks may include paths in a city or telephone network or circuit network. Graphs are also used in social networks like linkedIn, Facebook. For example, in Facebook, each person is represented with a vertex(or node). Each node is a structure and contains information like person id, name, gender, locale etc.
                             </p>
+						
+						<p><strong>Topics</strong>:</p>
+<div style="border:1px solid black;float:left;text-align:left;width:100%">
+<div style="width: 50%;float: left;text-align: left">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#bfsndfs">BFS &#038; DFS in Graph</a></li>
+<li><a href="#cycle">Cycles in Graph</a></li>
+<li><a href="#shortest">Shortest Paths in Graph</a></li>
+<li><a href="#MST">Minimum Spanning Tree</a></li>
+</ul></div>
+<div style="width: 50%;float: right;text-align: left">
+<ul>
+<li><a href="#topo">Topological Sorting</a></li>
+<li><a href="#connectivity">Connectivity</a></li>
+<li><a href="#maxflow">Maximum Flow</a></li>
+<li><a href="#mustdo">Some must do problems on Graph</a></li>
+<li><a href="#quiz">Some Quizzes</a></li>
+</ul></div>
+</div>
+<p><strong><a name="introduction"></a>Introduction:</strong></p>
+<ol>
+<li><a href="https://www.geeksforgeeks.org/introduction-to-graphs/"  >Introduction to Graphs</a></li>
+<li><a href="https://www.geeksforgeeks.org/graph-and-its-representations/"  >Graph and its representations</a></li>
+<li><a href="https://www.geeksforgeeks.org/graph-types-and-applications/"  >Types of Graphs with Examples</a></li>
+<li><a href="https://www.geeksforgeeks.org/basic-properties-of-a-graph/"  >Basic Properties of a Graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-graph/"  >Applications, Advantages and Disadvantages of Graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/transpose-graph/">Transpose graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-graph-and-tree/"  >Difference between graph and tree</a></li>
+</ol>
+<p><strong><a name="bfsndfs"></a>BFS and DFS in Graph:</strong></p>
+<ol>
+<li><a href="https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/"  >Breadth First Traversal for a Graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/"  >Depth First Traversal for a Graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/applications-of-depth-first-search/"  >Applications of Depth First Search</a></li>
+<li><a href="https://www.geeksforgeeks.org/applications-of-breadth-first-traversal/"  >Applications of Breadth First Traversal</a></li>
+<li><a href="https://www.geeksforgeeks.org/iterative-depth-first-traversal/">Iterative Depth First Search</a></li>
+<li><a href="https://www.geeksforgeeks.org/bfs-disconnected-graph/">BFS for Disconnected Graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/transitive-closure-of-a-graph-using-dfs/">Transitive Closure of a Graph using DFS</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-bfs-and-dfs/">Difference between BFS and DFS</a></li>
+</ol>
+<p><strong><a name="cycle"></a>Cycles in Graph:</strong></p>
+<ol>
+<li><a href="https://www.geeksforgeeks.org/detect-cycle-in-a-graph/" >Detect Cycle in a Directed Graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/detect-cycle-undirected-graph/"  >Detect cycle in an undirected graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/detect-cycle-direct-graph-using-colors/">Detect cycle in a direct graph using colors</a></li>
+<li><a href="https://www.geeksforgeeks.org/detect-negative-cycle-graph-bellman-ford/"  >Detect a negative cycle in a Graph | (Bellman Ford)</a></li>
+<li><a href="https://www.geeksforgeeks.org/cycles-of-length-n-in-an-undirected-and-connected-graph/">Cycles of length n in an undirected and connected graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/detecting-negative-cycle-using-floyd-warshall/">Detecting negative cycle using Floyd Warshall</a></li>
+<li><a href="https://www.geeksforgeeks.org/clone-directed-acyclic-graph/">Clone a Directed Acyclic Graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/union-by-rank-and-path-compression-in-union-find-algorithm/">Union By Rank and Path Compression in Union-Find Algorithm</a></li>
+<li><a href="https://www.geeksforgeeks.org/introduction-to-disjoint-set-data-structure-or-union-find-algorithm/">Introduction to Disjoint Set Data Structure or Union-Find Algorithm </a></li>
+</ol>
+<div style="text-align:center;margin:20px 0;max-height: 280px;" id="GFG_AD_gfg_outstream_incontent"></div>
+<p><strong><a name="shortest"></a>Shortest Path in Graph:</strong></p>
+<ol>
+<li><a href="https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/"  >Dijkstra’s shortest path algorithm</a></li>
+<li><a href="https://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/"  >Bellman–Ford Algorithm</a></li>
+<li><a href="https://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/"  >Floyd Warshall Algorithm</a></li>
+<li><a href="https://www.geeksforgeeks.org/johnsons-algorithm/"  >Johnson’s algorithm for All-pairs shortest paths</a></li>
+<li><a href="https://www.geeksforgeeks.org/shortest-path-for-directed-acyclic-graphs/"  >Shortest Path in Directed Acyclic Graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/dials-algorithm-optimized-dijkstra-for-small-range-weights/">Dial&#8217;s Algorithm</a></li>
+<li><a href="https://www.geeksforgeeks.org/multistage-graph-shortest-path/">Multistage Graph (Shortest Path)</a></li>
+<li><a href="https://www.geeksforgeeks.org/shortest-path-unweighted-graph/">Shortest path in an unweighted graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/karps-minimum-mean-average-weight-cycle-algorithm/">Karp’s minimum mean (or average) weight cycle algorithm</a></li>
+<li><a href="https://www.geeksforgeeks.org/0-1-bfs-shortest-path-binary-graph/">0-1 BFS (Shortest Path in a Binary Weight Graph)</a></li>
+<li><a href="https://www.geeksforgeeks.org/find-minimum-weight-cycle-undirected-graph/">Find minimum weight cycle in an undirected graph</a></li>
+</ol>
+<p><strong><a name="MST"></a>Minimum Spanning Tree:</strong></p><div style="text-align:center;margin:20px 0;max-height: 280px;" id="GFG_AD_gfg_outstream_incontent"></div>
+<ol>
+<li><a href="https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/"  >Prim’s Minimum Spanning Tree (MST)</a></li>
+<li><a href="https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/"  >Kruskal’s Minimum Spanning Tree Algorithm</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/">Difference between Prim’s and Kruskal’s algorithm for MST</a></li>
+<li><a href="https://www.geeksforgeeks.org/applications-of-minimum-spanning-tree/"  >Applications of Minimum Spanning Tree Problem</a></li>
+<li><a href="https://www.geeksforgeeks.org/minimum-cost-connect-cities/">Minimum cost to connect all cities</a></li>
+<li><a href="https://www.geeksforgeeks.org/total-number-spanning-trees-graph/">Total number of Spanning Trees in a Graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/minimum-product-spanning-tree/">Minimum Product Spanning Tree</a></li>
+<li><a href="https://www.geeksforgeeks.org/reverse-delete-algorithm-minimum-spanning-tree/">Reverse Delete Algorithm for Minimum Spanning Tree</a></li>
+<li><a href="https://www.geeksforgeeks.org/greedy-algorithms-set-9-boruvkas-algorithm/"  >Boruvka’s algorithm for Minimum Spanning Tree</a></li>
+</ol>
+<p><strong><a name="topo"></a>Topological Sorting:</strong></p>
+<ol>
+<li><a href="https://www.geeksforgeeks.org/topological-sorting/">Topological Sorting</a></li>
+<li><a href="https://www.geeksforgeeks.org/all-topological-sorts-of-a-directed-acyclic-graph/">All topological sorts of a Directed Acyclic Graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/">Kahn&#8217;s Algorithm for Topological Sorting</a></li>
+<li><a href="https://www.geeksforgeeks.org/maximum-edges-can-added-dag-remains-dag/">Maximum edges that can be added to DAG so that is remains DAG</a></li>
+<li><a href="https://www.geeksforgeeks.org/find-longest-path-directed-acyclic-graph/"  >Longest Path in a Directed Acyclic Graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/topological-sorting-using-departure-time-of-vertex/">Topological Sort of a graph using departure time of vertex</a></li>
+</ol>
+<p><strong><a name="connectivity"></a>Connectivity:</strong></p>
+<ol>
+<li><a href="https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/"  >Articulation Points (or Cut Vertices) in a Graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/biconnected-components/"  >Biconnected Components</a></li>
+<li><a href="https://www.geeksforgeeks.org/bridge-in-a-graph/"  >Bridges in a graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/eulerian-path-and-circuit/"  >Eulerian path and circuit</a></li>
+<li><a href="https://www.geeksforgeeks.org/fleurys-algorithm-for-printing-eulerian-path/"  >Fleury’s Algorithm for printing Eulerian Path or Circuit</a></li>
+<li><a href="https://www.geeksforgeeks.org/strongly-connected-components/"  >Strongly Connected Components</a></li>
+<li><a href="https://www.geeksforgeeks.org/count-possible-paths-source-destination-exactly-k-edges/"  >Count all possible walks from a source to a destination with exactly k edges</a></li>
+<li><a href="https://www.geeksforgeeks.org/euler-circuit-directed-graph/"  >Euler Circuit in a Directed Graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/length-of-shortest-chain-to-reach-a-target-word/">Length of shortest chain to reach the target word</a></li>
+<li><a href="https://www.geeksforgeeks.org/given-array-strings-find-strings-can-chained-form-circle/">Find if an array of strings can be chained to form a circle</a></li>
+<li><a href="https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/">Tarjan&#8217;s Algorithm to find strongly connected Components</a></li>
+<li><a href="https://www.geeksforgeeks.org/paths-travel-nodes-using-edgeseven-bridges-konigsberg/">Paths to travel each nodes using each edge (Seven Bridges of Königsberg)</a></li>
+<li><a href="https://www.geeksforgeeks.org/dynamic-connectivity-set-1-incremental/">Dynamic Connectivity | Set 1 (Incremental)</a></li>
+</ol>
+<p><strong><a name="maxflow"></a>Maximum Flow</strong></p>
+<ol>
+<li><a href="https://www.geeksforgeeks.org/max-flow-problem-introduction/">Max Flow Problem Introduction</a></li>
+<li><a style="font-size: 14px;line-height: 1.5em" href="https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/"  >Ford-Fulkerson Algorithm for Maximum Flow Problem</a></li>
+<li><a href="https://www.geeksforgeeks.org/find-edge-disjoint-paths-two-vertices/" >Find maximum number of edge disjoint paths between two vertices</a></li>
+<li><a href="https://www.geeksforgeeks.org/minimum-cut-in-a-directed-graph/" >Find minimum s-t cut in a flow network</a></li>
+<li><a href="https://www.geeksforgeeks.org/maximum-bipartite-matching/" >Maximum Bipartite Matching</a></li>
+<li><a href="https://www.geeksforgeeks.org/channel-assignment-problem/" >Channel Assignment Problem</a></li>
+<li><a href="https://www.geeksforgeeks.org/introduction-to-push-relabel-algorithm/">Introduction to Push Relabel Algorithm</a></li>
+<li><a href="https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-1-introduction-and-implementation/">Karger&#8217;s Algorithm- Set 1- Introduction and Implementation</a></li>
+<li><a href="https://www.geeksforgeeks.org/dinics-algorithm-maximum-flow/">Dinic’s algorithm for Maximum Flow</a></li>
+</ol>
+<p><strong><a name="mustdo"></a>Some must do Problems on Graph:</strong></p>
+<ol>
+<li><a href="https://www.geeksforgeeks.org/find-length-largest-region-boolean-matrix/">Find length of the largest region in Boolean Matrix</a></li>
+<li><a href="https://www.geeksforgeeks.org/count-number-trees-forest/">Count number of trees in a forest</a></li>
+<li><a href="https://www.geeksforgeeks.org/peterson-graph/">A Peterson Graph Problem</a></li>
+<li><a href="https://www.geeksforgeeks.org/clone-an-undirected-graph/">Clone an Undirected Graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/graph-coloring-applications/"  >Graph Coloring (Introduction and Applications)</a></li>
+<li><a href="https://www.geeksforgeeks.org/traveling-salesman-problem-tsp-implementation/">Traveling Salesman Problem (TSP) Implementation</a></li>
+<li><a href="https://www.geeksforgeeks.org/vertex-cover-problem-set-1-introduction-approximate-algorithm-2/"  >Vertex Cover Problem | Set 1 (Introduction and Approximate Algorithm)</a></li>
+<li><a href="https://www.geeksforgeeks.org/k-centers-problem-set-1-greedy-approximate-algorithm/"  >K Centers Problem | Set 1 (Greedy Approximate Algorithm)</a></li>
+<li><a href="https://www.geeksforgeeks.org/erdos-renyl-model-generating-random-graphs/">Erdos Renyl Model (for generating Random Graphs)</a></li>
+<li><a href="https://www.geeksforgeeks.org/chinese-postman-route-inspection-set-1-introduction/">Chinese Postman or Route Inspection | Set 1 (introduction)</a></li>
+<li><a href="https://www.geeksforgeeks.org/hierholzers-algorithm-directed-graph/">Hierholzer’s Algorithm for directed graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/bipartite-graph/"  >Check whether a given graph is Bipartite or not</a></li>
+<li><a href="https://www.geeksforgeeks.org/snake-ladder-problem-2/"  >Snake and Ladder Problem</a></li>
+<li><a href="https://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/"  >Boggle (Find all possible words in a board of characters)</a></li>
+<li><a href="https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-1-introduction/">Hopcroft Karp Algorithm for Maximum Matching-Introduction</a></li>
+<li><a href="https://www.geeksforgeeks.org/minimum-time-required-so-that-all-oranges-become-rotten/">Minimum Time to rot all oranges</a></li>
+<li><a href="https://www.geeksforgeeks.org/construct-graph-given-degrees-vertices/">Construct a graph from given degrees of all vertices</a></li>
+<li><a href="https://www.geeksforgeeks.org/determine-whether-universal-sink-exists-directed-graph/">Determine whether a universal sink exists in a directed graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/number-sink-nodes-graph/">Number of sink nodes in a graph</a></li>
+<li><a href="https://www.geeksforgeeks.org/two-clique-problem-check-graph-can-divided-two-cliques/">Two Clique Problem (Check if Graph can be divided in two Cliques)</a></li>
+</ol>
+<p><strong><a name="quiz"></a>Some Quizzes:</strong></p>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/algorithms-gq/top-mcqs-on-graph-traversals-with-answers/?ref=graph_lp"> Quizzes on Graph Traversal</a></li>
+<li><a href="https://www.geeksforgeeks.org/algorithms-gq/top-mcqs-on-shortest-paths-in-graphs-with-answers/?ref=graph_lp"> Quizzes on Graph Shortest Path</a></li>
+<li><a href="https://www.geeksforgeeks.org/algorithms-gq/top-mcqs-on-minimum-spanning-tree-mst-in-graphs-with-answers/?ref=graph_lp"> Quizzes on Graph Minimum Spanning Tree</a></li>
+<li><a href="https://www.geeksforgeeks.org/data-structure-gq/top-mcqs-on-graph-data-strcuture-with-answers/?ref=graph_lp">Quizzes on Graphs</a></li>
+</ul>
+<p><strong><a name="quickLinks"></a> Quick Links :</strong></p>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/top-10-interview-question-depth-first-search-dfs/">Top 10 Interview Questions on Depth First Search (DFS)</a></li>
+<li><a href="https://www.geeksforgeeks.org/interesting-shortest-path-questions-set-1/" rel="bookmark">Some interesting shortest path questions </a></li>
+<li><a href="https://practice.geeksforgeeks.org/topics/Graph/?ref=taocp">Practice Problems on Graphs</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLqM7alHXFySEaZgcg7uRYJFBnYMLti-nh">Videos on Graphs</a></li>
+</ul>
+<p><br />
+</p>
+</div>
+</div><!-- .entry-content -->
+      <!-- <footer class="entry-meta">
+
+			
+		</footer>.entry-meta -->
+   
+	</article>
                         </div>
                     </div>
                 </div>
